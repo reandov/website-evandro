@@ -1,17 +1,23 @@
 'use client'
 
-import { useEffect } from 'react'
 import Link from 'next/link'
 import { House, MoonStars } from 'phosphor-react'
 
 import { URLs } from '@/data/urls'
+import { usePathname } from 'next/navigation'
 
 export function NavigationBar() {
+  const pathname = usePathname()
+
   return (
     <nav className="p-3 bg-neutral-800 ">
       <div className="max-w-7xl m-auto flex flex-row justify-between">
         <Link href="/">
-          <House color="white" size={28} weight="fill" />
+          <House
+            color={pathname === '/' ? '#0ea5e9' : 'white'}
+            size={28}
+            weight="fill"
+          />
         </Link>
 
         <ul className="flex flex-row gap-12">
