@@ -9,7 +9,32 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        text: 'text 2s ease infinite',
+        smoothBounce: 'smoothBounce 2s ease-in-out infinite alternate-reverse',
+      },
+      keyframes: {
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+        smoothBounce: {
+          from: {
+            transform: 'translateY(0px)',
+          },
+          to: {
+            transform: 'translateY(10px)',
+          },
+        },
+      },
+    },
   },
   plugins: [],
 }
