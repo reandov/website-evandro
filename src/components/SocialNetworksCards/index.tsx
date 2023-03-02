@@ -16,10 +16,10 @@ export function SocialNetworksCards() {
     homeData.socialNetworks
 
   return (
-    <ul className="mt-8 flex flex-wrap gap-2 justify-center">
+    <ul className="mt-8 flex flex-wrap justify-center gap-2">
       <Link href={github.href}>
         <li>
-          <div className="w-50 flex gap-4 border-2 rounded-xl p-4 transition hover:border-neutral-500 hover:bg-neutral-500">
+          <div className="flex w-40 items-center justify-center gap-2 rounded-xl border-2 p-4 transition hover:border-neutral-500 hover:bg-neutral-500">
             <GithubLogo color="white" size={30} weight="fill" />
             <span>GitHub</span>
           </div>
@@ -27,7 +27,7 @@ export function SocialNetworksCards() {
       </Link>
       <Link href={linkedin.href}>
         <li>
-          <div className="w-50 flex gap-4 border-2 rounded-xl p-4 transition hover:border-sky-700 hover:bg-sky-700">
+          <div className="flex w-40 items-center justify-center gap-2 rounded-xl border-2 p-4 transition hover:border-sky-700 hover:bg-sky-700">
             <LinkedinLogo color="white" size={30} weight="fill" />
             <span>LinkedIn</span>
           </div>
@@ -35,7 +35,7 @@ export function SocialNetworksCards() {
       </Link>
       <Link href={instagram.href}>
         <li>
-          <div className="w-50 flex gap-4 border-2 rounded-xl p-4 transition hover:border-pink-700 hover:bg-pink-700">
+          <div className="flex w-40 items-center justify-center gap-2 rounded-xl border-2 p-4 transition hover:border-pink-700 hover:bg-pink-700">
             <InstagramLogo color="white" size={30} weight="fill" />
             <span>Instagram</span>
           </div>
@@ -43,7 +43,7 @@ export function SocialNetworksCards() {
       </Link>
       <Link href={twitter.href}>
         <li>
-          <div className="w-50 flex gap-4 border-2 rounded-xl p-4 transition hover:border-sky-500 hover:bg-sky-500">
+          <div className="flex w-40 items-center justify-center gap-2 rounded-xl border-2 p-4 transition hover:border-sky-500 hover:bg-sky-500">
             <TwitterLogo color="white" size={30} weight="fill" />
             <span>Twitter</span>
           </div>
@@ -51,7 +51,7 @@ export function SocialNetworksCards() {
       </Link>
       <Link href={spotify.href}>
         <li>
-          <div className="w-50 flex gap-4 border-2 rounded-xl p-4 transition hover:border-green-500 hover:bg-green-500">
+          <div className="flex w-40 items-center justify-center gap-2 rounded-xl border-2 p-4 transition hover:border-green-500 hover:bg-green-500">
             <SpotifyLogo color="white" size={30} weight="fill" />
             <span>Spotify</span>
           </div>

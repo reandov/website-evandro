@@ -24,7 +24,14 @@ export function NavigationBar() {
           {URLs.map((url) => {
             return (
               <Link key={url.id} href={url.href}>
-                <li className="transition hover:text-sky-600">{url.alias}</li>
+                <li
+                  className={`${
+                    pathname === url.href &&
+                    'text-sky-600 font-semibold border-b-2 border-sky-600'
+                  } transition hover:text-sky-600`}
+                >
+                  {url.alias}
+                </li>
               </Link>
             )
           })}
