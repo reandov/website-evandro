@@ -13,7 +13,6 @@ module.exports = {
       animation: {
         text: 'text 2s ease infinite',
         smoothBounce: 'smoothBounce 2s ease-in-out infinite alternate-reverse',
-        opacity: 'opacity 0.2s ease',
       },
       keyframes: {
         text: {
@@ -32,16 +31,6 @@ module.exports = {
           },
           to: {
             transform: 'translateY(10px)',
-          },
-        },
-        opacity: {
-          from: {
-            opacity: 0,
-            transform: 'translateY(2px)',
-          },
-          to: {
-            opacity: 1,
-            transform: 'translateY(0)',
           },
         },
       },
