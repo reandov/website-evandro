@@ -21,7 +21,7 @@ export function NavigationBar() {
           />
         </Link>
 
-        {window.screen.width < 768 ? (
+        {window && window.screen.width < 768 ? (
           <SelectMobile />
         ) : (
           <ul className="flex flex-row gap-12">
