@@ -5,6 +5,7 @@ import { House, MoonStars } from 'phosphor-react'
 
 import { URLs } from '@/data/urls'
 import { usePathname } from 'next/navigation'
+import { LinksDropdown } from '../LinksDropdown'
 
 export function NavigationBar() {
   const pathname = usePathname()
@@ -20,7 +21,8 @@ export function NavigationBar() {
           />
         </Link>
 
-        <ul className="flex flex-row gap-12">
+        <LinksDropdown />
+        {/* <ul className="flex flex-row gap-12">
           {URLs.map((url) => {
             return (
               <Link key={url.id} href={url.href}>
@@ -35,7 +37,7 @@ export function NavigationBar() {
               </Link>
             )
           })}
-        </ul>
+        </ul> */}
 
         <MoonStars color="white" size={28} weight="fill" />
       </div>
