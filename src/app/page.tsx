@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Page() {
   return (
-    <main className="max-w-7xl rounded-t-3xl bg-neutral-800 p-8 lg:rounded-xl">
+    <main className="mt-8 max-w-7xl rounded-t-3xl bg-neutral-800 p-8 sm:mt-8 lg:mt-0 lg:rounded-xl">
       <div className="flex flex-col items-center justify-around lg:flex-row">
         <div className="border-spacing-8 border-neutral-700 lg:w-1/2 lg:border-r lg:pr-8">
           <div className="mb-4">

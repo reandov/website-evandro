@@ -21,8 +21,11 @@ export function NavigationBar() {
           />
         </Link>
 
-        <LinksDropdown />
-        {/* <ul className="flex flex-row gap-12">
+        <div className="block sm:hidden">
+          <LinksDropdown />
+        </div>
+
+        <ul className="hidden flex-row gap-12 sm:flex">
           {URLs.map((url) => {
             return (
               <Link key={url.id} href={url.href}>
@@ -37,7 +40,7 @@ export function NavigationBar() {
               </Link>
             )
           })}
-        </ul> */}
+        </ul>
 
         <MoonStars color="white" size={28} weight="fill" />
       </div>

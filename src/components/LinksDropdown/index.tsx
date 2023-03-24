@@ -1,34 +1,65 @@
 import { URLs } from '@/data/urls'
 import Link from 'next/link'
 import { List } from 'phosphor-react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 
 export function LinksDropdown() {
+  const [isDropdownActive, setIsDropdownActive] = useState(false)
+
+  const screenRef = useRef(null)
+
+  function handleDropdownVisibility() {
+    setIsDropdownActive(!isDropdownActive)
+  }
+
+  const closeDropdown = useCallback(
+    (event: MouseEvent) => {
+      if ((event.target as Element).id !== 'menu' && isDropdownActive) {
+        setIsDropdownActive(false)
+      }
+    },
+    [isDropdownActive]
+  )
+
+  useEffect(() => {
+    document.addEventListener('mousedown', closeDropdown)
+
+    return () => {
+      document.removeEventListener('mousedown', closeDropdown)
+    }
+  }, [closeDropdown])
+
   return (
-    <div className="flex flex-col items-center gap-2">
-      <button className="rounded-md" type="button">
-        <List color="white" size={28} />
+    <div className="flex flex-col items-center gap-2" ref={screenRef}>
+      <button
+        className="rounded-md"
+        type="button"
+        onClick={handleDropdownVisibility}
+      >
+        <List color="white" size={28} id="menu" />
       </button>
-      <div className="z-50 w-44 divide-y divide-gray-100 rounded-lg bg-gray-700 shadow">
-        <ul
-          className="py-2 text-sm text-gray-700 dark:text-gray-200"
-          aria-labelledby="states-button"
-        >
-          {URLs.map((url) => {
-            return (
-              <Link key={url.id} href={url.href}>
-                <li>
-                  <button
-                    type="button"
-                    className="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
-                  >
-                    <div className="inline-flex items-center">{url.alias}</div>
-                  </button>
-                </li>
-              </Link>
-            )
-          })}
-        </ul>
-      </div>
+      {isDropdownActive && (
+        <div className="absolute top-12 z-50 w-44 divide-y divide-gray-100 rounded-lg bg-neutral-600 shadow">
+          <ul className="py-2 text-sm text-gray-700">
+            {URLs.map((url) => {
+              return (
+                <Link key={url.id} href={url.href}>
+                  <li>
+                    <button
+                      type="button"
+                      className="inline-flex w-full px-4 py-2 text-sm text-white hover:bg-neutral-700"
+                    >
+                      <div className="inline-flex items-center">
+                        {url.alias}
+                      </div>
+                    </button>
+                  </li>
+                </Link>
+              )
+            })}
+          </ul>
+        </div>
+      )}
     </div>
   )
 }

@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <NavigationBar />
-        <div className="m-auto flex h-[calc(100vh-3.25rem)] items-center justify-center">
+        <div className="m-auto flex items-center justify-center sm:h-screen lg:h-[calc(100vh-3.25rem)]">
           {children}
         </div>
       </body>
