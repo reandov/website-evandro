@@ -14,7 +14,12 @@ export function LinksDropdown() {
 
   const closeDropdown = useCallback(
     (event: MouseEvent) => {
-      if ((event.target as Element).id !== 'menu' && isDropdownActive) {
+      const element = event.target as Element
+      if (
+        element.id !== 'menu' &&
+        !document.getElementById('links-dropdown') &&
+        isDropdownActive
+      ) {
         setIsDropdownActive(false)
       }
     },
@@ -39,19 +44,26 @@ export function LinksDropdown() {
         <List color="white" size={28} id="menu" />
       </button>
       {isDropdownActive && (
-        <div className="absolute top-12 z-50 w-44 divide-y divide-gray-100 rounded-lg bg-neutral-600 shadow">
+        <div
+          id="links-dropdown"
+          className="absolute top-12 z-50 w-44 divide-y divide-gray-100 rounded-lg bg-neutral-600 shadow"
+        >
           <ul className="py-2 text-sm text-gray-700">
             {URLs.map((url) => {
               return (
-                <Link key={url.id} href={url.href}>
+                <Link
+                  key={url.id}
+                  href={url.href}
+                  onClick={handleDropdownVisibility}
+                >
                   <li>
                     <button
                       type="button"
                       className="inline-flex w-full px-4 py-2 text-sm text-white hover:bg-neutral-700"
                     >
-                      <div className="inline-flex items-center">
+                      <span className="inline-flex items-center">
                         {url.alias}
-                      </div>
+                      </span>
                     </button>
                   </li>
                 </Link>
