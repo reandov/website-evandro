@@ -1,3 +1,4 @@
+import { NavigationBar } from '@/components/NavigationBar'
 import './globals.css'
 
 export const metadata = {
@@ -12,7 +13,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavigationBar />
+        <div className="m-auto flex items-center justify-center sm:h-screen lg:h-[calc(100vh-3.25rem)]">
+          {children}
+        </div>
+      </body>
     </html>
   )
 }
