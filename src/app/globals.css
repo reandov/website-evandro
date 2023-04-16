@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    @apply bg-neutral-900 text-white;
+  body {
+    @apply text-white;
   }
 }

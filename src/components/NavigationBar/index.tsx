@@ -1,49 +1,13 @@
-'use client'
-
-import Link from 'next/link'
-import { House, MoonStars } from 'phosphor-react'
-
-import { URLs } from '@/data/urls'
-import { usePathname } from 'next/navigation'
-import { LinksDropdown } from '../LinksDropdown'
-
 export function NavigationBar() {
-  const pathname = usePathname()
-
   return (
-    <nav className="bg-neutral-800 p-3 ">
-      <div className="m-auto flex max-w-7xl flex-row justify-between">
-        <Link href="/">
-          <House
-            color={pathname === '/' ? '#0ea5e9' : 'white'}
-            size={28}
-            weight="fill"
-          />
-        </Link>
-
-        <div className="block sm:hidden">
-          <LinksDropdown />
-        </div>
-
-        <ul className="hidden flex-row gap-12 sm:flex">
-          {URLs.map((url) => {
-            return (
-              <Link key={url.id} href={url.href}>
-                <li
-                  className={`${
-                    pathname === url.href &&
-                    'border-b-2 border-sky-600 font-semibold text-sky-600'
-                  } transition hover:text-sky-600`}
-                >
-                  {url.alias}
-                </li>
-              </Link>
-            )
-          })}
-        </ul>
-
-        <MoonStars color="white" size={28} weight="fill" />
-      </div>
+    <nav className="flex flex-row justify-between items-center">
+      <h1 className="text-white font-bold text-3xl font-mono">Evandro</h1>
+      <button
+        type="button"
+        className="p-3 rounded-full border-2 border-gray-100 text-white font-bold hover:bg-gray-100 hover:text-black transition hover:-translate-y-1"
+      >
+        Message Me
+      </button>
     </nav>
   )
 }
