@@ -61,7 +61,7 @@ export function Timeline() {
   }
 
   return (
-    <section>
+    <section id="experiences">
       <header className="mb-8">
         <SectionTitle title="Experience" />
         <div className="text-md text-justify md:text-lg">
