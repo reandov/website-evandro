@@ -7,16 +7,14 @@ interface ProfilePictureProps {
 
 export function ProfilePicture({ src, alt }: ProfilePictureProps) {
   return (
-    <div>
-      <div className="w-52 lg:w-96">
-        <Image
-          src={src}
-          className="animate-smoothBounce rounded-3xl "
-          alt={alt}
-          width={850}
-          height={850}
-        />
-      </div>
+    <div className="w-80 lg:w-96">
+      <Image
+        src={src}
+        className="animate-smoothBounce rounded-3xl drop-shadow-md"
+        alt={alt}
+        width={850}
+        height={850}
+      />
     </div>
   )
 }

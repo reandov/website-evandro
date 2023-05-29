@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-indigo-900 text-white;
+    @apply bg-platinum text-neutral-800;
   }
 }

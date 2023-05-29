@@ -10,7 +10,7 @@ interface TechsProps {
 
 export function Techs({ techs }: TechsProps) {
   return (
-    <ul className="grid grid-cols-3 gap-8 lg:grid-cols-5">
+    <ul className="grid grid-cols-2 gap-4 lg:grid-cols-5">
       {techs.map((tech) => {
         return (
           <li
