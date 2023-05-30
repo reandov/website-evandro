@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        platinum: '#dbe3e4',
+      },
       animation: {
         text: 'text 2s ease infinite',
         smoothBounce: 'smoothBounce 2s ease-in-out infinite alternate-reverse',

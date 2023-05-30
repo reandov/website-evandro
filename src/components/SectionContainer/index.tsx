@@ -3,5 +3,5 @@ interface SectionContainerProps {
 }
 
 export function SectionContainer({ children }: SectionContainerProps) {
-  return <div className="max-w-6xl m-auto pt-8">{children}</div>
+  return <div className="m-auto lg:pt-8">{children}</div>
 }
