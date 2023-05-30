@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { SectionTitle } from '../SectionTitle'
 import { Experience, Project } from '@/types/types'
 import { experiences } from '@/data'
 
@@ -13,7 +12,7 @@ export function Timeline() {
 
   function renderProjects(experienceId: number, projects: Project[]) {
     return (
-      <ul id={`projects-${experienceId}`} className="hidden">
+      <ul id={`projects-${experienceId}`} className="mt-4 hidden">
         {projects.map((project, index) => {
           return (
             <li key={project.id} className="mb-4">
@@ -34,7 +33,7 @@ export function Timeline() {
         <div key={experience.id} className="flex items-center">
           <div className="-ml-[calc(0.8rem)]">
             <svg height="24" width="24">
-              <circle cx="12" cy="12" r="10" fill="white" />
+              <circle cx="12" cy="12" r="10" fill="black" />
             </svg>
           </div>
 
@@ -61,14 +60,12 @@ export function Timeline() {
   }
 
   return (
-    <section id="experiences">
+    <section id="experiences" className="mt-24">
       <header className="mb-8">
-        <SectionTitle title="Experience" />
-        <div className="text-md text-justify md:text-lg">
-          <p>{experiences.text}</p>
-        </div>
+        <h1 className="font-mono text-3xl font-bold">My experience</h1>
+        <p className="mt-4 text-justify">{experiences.text}</p>
       </header>
-      <div className="flex flex-col border-l-2 lg:m-auto lg:max-w-[calc(100vw-90vh)]">
+      <div className="mt-4 flex flex-col border-l-2 border-neutral-800 lg:m-auto lg:max-w-[calc(100vw-90vh)]">
         {renderExperiences(experiences.companies)}
       </div>
     </section>

@@ -1,26 +1,18 @@
-import { SectionTitle } from '../SectionTitle'
 import { about } from '@/data'
-import { ProfilePicture } from './components/ProfilePicture'
 
 export function About() {
   return (
     <section
       id="about"
-      className="grid h-[calc(100vh-10vh)] grid-cols-1 justify-items-center gap-10 lg:h-[calc(100vh-30vh)] lg:grid-cols-2 lg:justify-items-end"
+      className="m-auto mt-24 self-center rounded-md bg-neutral-800 p-4 text-white drop-shadow-md lg:w-3/4"
     >
-      <div>
-        <SectionTitle title={about.roles} />
-        <div className="text-md flex flex-col gap-2 text-justify md:text-lg">
-          {about.text.map((paragraph, index) => {
-            return <p key={index}>{paragraph}</p>
-          })}
-        </div>
-      </div>
-      <div>
-        <ProfilePicture
-          src="https://github.com/evnrodr.png"
-          alt="Profile picture"
-        />
+      <header>
+        <h1 className="font-mono text-3xl font-bold">About me</h1>
+      </header>
+      <div className="text-md mt-4 flex flex-col gap-4 text-justify md:text-lg ">
+        {about.text.map((paragraph, index) => {
+          return <p key={index}>{paragraph}</p>
+        })}
       </div>
     </section>
   )
