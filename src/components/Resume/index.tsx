@@ -6,6 +6,7 @@ import { Modal } from '../Modal'
 import { about } from '@/data'
 import { PaperPlaneTilt } from '@phosphor-icons/react'
 import { ContactForm } from '../ContactForm'
+import { Contacts } from '../Contacts'
 
 export function Resume() {
   const [isOpen, setIsOpen] = useState(false)
@@ -19,15 +20,13 @@ export function Resume() {
   }
 
   return (
-    <section className="mt-16 flex flex-col lg:mt-32 lg:flex-row lg:items-center lg:justify-evenly">
+    <section className="mt-24 flex animate-appear flex-col lg:mt-32 lg:flex-row lg:items-center lg:justify-evenly">
       <header className="drop-shadow-md">
-        <h1 className="animate-appear font-mono text-3xl font-bold lg:text-5xl">
-          Hi! I am
+        <h1 className="font-mono text-3xl font-bold lg:text-5xl">Hi! I am</h1>
+        <h1 className="mb-4 font-mono text-3xl font-bold lg:text-5xl">
+          {about.authorName}
         </h1>
-        <h1 className="mb-4 animate-appear font-mono text-3xl font-bold lg:text-5xl">
-          Evandro Rodrigues
-        </h1>
-        <h1 className=" text-md mb-4 animate-appear font-mono font-bold delay-200 md:text-2xl">
+        <h1 className=" text-md mb-4 font-mono font-bold delay-200 md:text-2xl">
           {about.roles}
         </h1>
       </header>
@@ -44,6 +43,8 @@ export function Resume() {
           Message me
           <PaperPlaneTilt />
         </button>
+
+        <Contacts />
       </div>
 
       <Modal isOpen={isOpen} onClose={closeModal}>

@@ -6,7 +6,7 @@ import { Techs } from './components/Techs'
 
 export function Skills() {
   return (
-    <section id="skills" className="mt-24">
+    <section id="skills" className="mt-24 scroll-mt-24">
       <header className="mb-8">
         <h1 className="font-mono text-3xl font-bold">My skills</h1>
         <p className="mt-4 text-justify">{skills.text}</p>

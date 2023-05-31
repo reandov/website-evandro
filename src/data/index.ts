@@ -1,6 +1,5 @@
-export const authorName = 'Evandro'
-
 export const about = {
+  authorName: 'Evandro Rodrigues',
   roles: 'Web Developer | Computer Scientist',
   text: [
     'Hi, my name is Evandro Rodrigues, nice to met you! I am a front-end developer from Brazil. I am also graduating myself in Computer Science by the Federal University of Ceará. I LOVE working with technology in general, so much that front-end is not enough to fulfil my spectations, therefore, I have experience with a lot of development areas such as front-end, back-end, machine learning, data science, game development and others.',
@@ -194,4 +193,11 @@ export const experiences = {
       ],
     },
   ],
+}
+
+export const contacts = {
+  linkedin: 'https://www.linkedin.com/in/evnrodr/',
+  github: 'https://github.com/evnrodr',
+  discord: 'https://discordapp.com/users/182915232451002369/',
+  twitter: 'https://twitter.com/evandro_rd',
 }

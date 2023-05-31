@@ -7,7 +7,7 @@ interface ProfilePictureProps {
 
 export function ProfilePicture({ src, alt }: ProfilePictureProps) {
   return (
-    <div className="w-80 lg:w-96">
+    <div className="w-80 animate-appear lg:w-96">
       <Image
         src={src}
         className="animate-smoothBounce rounded-3xl drop-shadow-md"

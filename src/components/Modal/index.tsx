@@ -44,7 +44,7 @@ export function Modal({ isOpen, onClose, children }: ModalProps) {
         </div>
         <div
           ref={modalRef}
-          className="transform overflow-hidden rounded-lg bg-white p-8 shadow-xl transition-all sm:w-full sm:max-w-lg"
+          className="lg:w-2/4 w-full transform overflow-hidden rounded-lg bg-white p-8 shadow-xl transition-all"
         >
           {children}
         </div>

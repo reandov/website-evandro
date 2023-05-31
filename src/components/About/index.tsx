@@ -4,7 +4,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="m-auto mt-24 self-center rounded-md bg-neutral-800 p-4 text-white drop-shadow-md lg:w-3/4"
+      className="lg:w-3/4 m-auto mt-24 animate-appear scroll-mt-24 self-center rounded-md bg-neutral-800 p-4 text-white drop-shadow-md"
     >
       <header>
         <h1 className="font-mono text-3xl font-bold">About me</h1>
