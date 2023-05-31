@@ -16,7 +16,8 @@ module.exports = {
       animation: {
         text: 'text 2s ease infinite',
         smoothBounce: 'smoothBounce 2s ease-in-out infinite alternate-reverse',
-        appear: 'appear 1.5s',
+        timedAppear: 'appear 2s',
+        appear: 'appear',
       },
       keyframes: {
         text: {

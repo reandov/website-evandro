@@ -2,6 +2,7 @@ import { About } from '@/components/About'
 import { Footer } from '@/components/Footer'
 import { NavigationBar } from '@/components/NavigationBar'
 import { Resume } from '@/components/Resume'
+import { ScrollAnimation } from '@/components/ScrollAnimation'
 import { Skills } from '@/components/Skills'
 import { Timeline } from '@/components/Timeline'
 
@@ -12,10 +13,18 @@ export default function Page() {
         <NavigationBar />
       </header>
       <main className="m-auto max-w-[22rem] lg:max-w-7xl">
-        <Resume />
-        <About />
-        <Skills />
-        <Timeline />
+        <ScrollAnimation>
+          <Resume />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <About />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Skills />
+        </ScrollAnimation>
+        <ScrollAnimation>
+          <Timeline />
+        </ScrollAnimation>
       </main>
       <Footer />
     </>

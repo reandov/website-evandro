@@ -20,7 +20,7 @@ export function Resume() {
   }
 
   return (
-    <section className="mt-24 flex animate-appear flex-col lg:mt-32 lg:flex-row lg:items-center lg:justify-evenly">
+    <section className="mt-24 flex flex-col lg:mt-32 lg:flex-row lg:items-center lg:justify-evenly">
       <header className="drop-shadow-md">
         <h1 className="font-mono text-3xl font-bold lg:text-5xl">Hi! I am</h1>
         <h1 className="mb-4 font-mono text-3xl font-bold lg:text-5xl">
