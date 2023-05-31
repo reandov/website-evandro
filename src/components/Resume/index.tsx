@@ -19,7 +19,7 @@ export function Resume() {
   }
 
   return (
-    <section className="mt-32 flex flex-col lg:flex-row lg:items-center lg:justify-evenly">
+    <section className="mt-16 flex flex-col lg:mt-32 lg:flex-row lg:items-center lg:justify-evenly">
       <header className="drop-shadow-md">
         <h1 className="animate-appear font-mono text-3xl font-bold lg:text-5xl">
           Hi! I am
