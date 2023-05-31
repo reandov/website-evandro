@@ -1,6 +1,5 @@
-export const authorName = 'Evandro'
-
 export const about = {
+  authorName: 'Evandro Rodrigues',
   roles: 'Web Developer | Computer Scientist',
   text: [
     'Hi, my name is Evandro Rodrigues, nice to met you! I am a front-end developer from Brazil. I am also graduating myself in Computer Science by the Federal University of Ceará. I LOVE working with technology in general, so much that front-end is not enough to fulfil my spectations, therefore, I have experience with a lot of development areas such as front-end, back-end, machine learning, data science, game development and others.',
@@ -15,51 +14,121 @@ export const skills = {
       id: 0,
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg',
       name: 'HTML',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
     },
     {
       id: 1,
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg',
       name: 'CSS',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
     },
     {
       id: 2,
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
       name: 'JavaScript',
-    },
-    {
-      id: 3,
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
-      name: 'React',
-    },
-    {
-      id: 4,
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
-      name: 'NextJS',
+      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
     },
     {
       id: 5,
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
       name: 'TypeScript',
-    },
-    {
-      id: 6,
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
-      name: 'Firebase',
-    },
-    {
-      id: 7,
-      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
-      name: 'VS Code',
+      link: 'https://www.typescriptlang.org/',
     },
     {
       id: 8,
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
       name: 'Python',
+      link: 'https://www.python.org/',
+    },
+    {
+      id: 10,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg',
+      name: 'Rust',
+      link: 'https://www.rust-lang.org/',
+    },
+    {
+      id: 3,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
+      name: 'React',
+      link: 'https://reactjs.org/',
+    },
+    {
+      id: 4,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg',
+      name: 'NextJS',
+      link: 'https://nextjs.org/',
+    },
+    {
+      id: 6,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg',
+      name: 'Firebase',
+      link: 'https://firebase.google.com/',
+    },
+    {
+      id: 11,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-plain.svg',
+      name: 'NestJS',
+      link: 'https://nestjs.com/',
+    },
+    {
+      id: 7,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg',
+      name: 'VS Code',
+      link: 'https://code.visualstudio.com/',
     },
     {
       id: 9,
       src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg',
       name: 'Git',
+      link: 'https://git-scm.com/',
+    },
+    {
+      id: 11,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg',
+      name: 'PostgreSQL',
+      link: 'https://www.postgresql.org/',
+    },
+    {
+      id: 12,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg',
+      name: 'Linux',
+      link: 'https://www.linux.org/',
+    },
+    {
+      id: 13,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg',
+      name: 'Shell',
+      link: 'https://en.wikipedia.org/wiki/Shell_script',
+    },
+    {
+      id: 14,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
+      name: 'Jira',
+      link: 'https://www.atlassian.com/software/jira',
+    },
+    {
+      id: 15,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
+      name: 'Figma',
+      link: 'https://www.figma.com/',
+    },
+    {
+      id: 16,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg',
+      name: 'LaTeX',
+      link: 'https://www.latex-project.org/',
+    },
+    {
+      id: 17,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
+      name: 'Node',
+      link: 'https://nodejs.org/',
+    },
+    {
+      id: 18,
+      src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg',
+      name: 'Docker',
+      link: 'https://www.docker.com/',
     },
   ],
 }
@@ -124,4 +193,11 @@ export const experiences = {
       ],
     },
   ],
+}
+
+export const contacts = {
+  linkedin: 'https://www.linkedin.com/in/evnrodr/',
+  github: 'https://github.com/evnrodr',
+  discord: 'https://discordapp.com/users/182915232451002369/',
+  twitter: 'https://twitter.com/evandro_rd',
 }

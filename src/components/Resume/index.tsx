@@ -3,10 +3,10 @@
 import { useState } from 'react'
 import { ProfilePicture } from '../About/components/ProfilePicture'
 import { Modal } from '../Modal'
-import { SectionTitle } from '../SectionTitle'
 import { about } from '@/data'
 import { PaperPlaneTilt } from '@phosphor-icons/react'
 import { ContactForm } from '../ContactForm'
+import { Contacts } from '../Contacts'
 
 export function Resume() {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,13 +20,15 @@ export function Resume() {
   }
 
   return (
-    <section className="mt-32 flex flex-col lg:flex-row lg:items-center lg:justify-evenly">
+    <section className="mt-24 flex flex-col lg:mt-32 lg:flex-row lg:items-center lg:justify-evenly">
       <header className="drop-shadow-md">
         <h1 className="font-mono text-3xl font-bold lg:text-5xl">Hi! I am</h1>
         <h1 className="mb-4 font-mono text-3xl font-bold lg:text-5xl">
-          Evandro Rodrigues
+          {about.authorName}
         </h1>
-        <SectionTitle title={about.roles} />
+        <h1 className=" text-md mb-4 font-mono font-bold delay-200 md:text-2xl">
+          {about.roles}
+        </h1>
       </header>
       <div className="flex flex-col items-center justify-center gap-8">
         <ProfilePicture
@@ -41,6 +43,8 @@ export function Resume() {
           Message me
           <PaperPlaneTilt />
         </button>
+
+        <Contacts />
       </div>
 
       <Modal isOpen={isOpen} onClose={closeModal}>

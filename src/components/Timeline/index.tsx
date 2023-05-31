@@ -60,12 +60,12 @@ export function Timeline() {
   }
 
   return (
-    <section id="experiences" className="mt-24">
+    <section id="experiences" className="mt-24 scroll-mt-24">
       <header className="mb-8">
         <h1 className="font-mono text-3xl font-bold">My experience</h1>
         <p className="mt-4 text-justify">{experiences.text}</p>
       </header>
-      <div className="mt-4 flex flex-col border-l-2 border-neutral-800 lg:m-auto lg:max-w-[calc(100vw-90vh)]">
+      <div className="lg:max-w-[calc(100vw-90vh)] mt-4 flex flex-col border-l-2 border-neutral-800 lg:m-auto">
         {renderExperiences(experiences.companies)}
       </div>
     </section>
