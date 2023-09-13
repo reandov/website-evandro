@@ -2,7 +2,7 @@ export const about = {
   authorName: 'Evandro Rodrigues',
   roles: 'Web Developer | Computer Scientist',
   text: [
-    'Hi, my name is Evandro Rodrigues, nice to met you! I am a front-end developer from Brazil. I am also graduating myself in Computer Science by the Federal University of Ceará. I LOVE working with technology in general, so much that front-end is not enough to fulfil my spectations, therefore, I have experience with a lot of development areas such as front-end, back-end, machine learning, data science, game development and others.',
+    'Hi, my name is Evandro Rodrigues, nice to meet you! I am a front-end developer from Brazil. I am also graduating myself in Computer Science by the Federal University of Ceará. I LOVE working with technology in general, so much that front-end is not enough to fulfil my spectations, therefore, I have experience with a lot of development areas such as front-end, back-end, machine learning, data science, game development and others.',
     'Currently I am working in a tech company as a Front-End developer using React with meta-frameworks such as NextJS and Oracle OpenStore Framework. I am also working with technologies such as TypeScript, Styled Components and others.',
   ],
 }
